@@ -18,6 +18,39 @@ public class UnboxedMovie implements Serializable {
 
     private Float rating;
 
+    /** Added to increase instance size*/
+    
+//    private String genres1;
+//
+//	private String name1;
+//	
+//	private Integer year1;
+//	
+//	private Integer votes1;
+//	
+//	private Float rating1;
+//	
+//	private String genres2;
+//
+//	private String name2;
+//		
+//	private Integer year2;
+//		
+//	private Integer votes2;
+//		
+//	private Float rating2;
+//	
+//	private String genres3;
+//
+//	private String name3;
+//		
+//	private Integer year3;
+//		
+//	private Integer votes3;
+//		
+//	private Float rating3;
+    
+    
     @Override
     public String toString() {
         return new GsonBuilder().create().toJson(this);
@@ -36,6 +69,21 @@ public class UnboxedMovie implements Serializable {
 		this.year = year.intValue();
 		this.votes = votes.intValue();
 		this.rating = rating.floatValue();
+//		this.genres1 = genres;
+//		this.name1 = name;
+//		this.year1 = year.intValue();
+//		this.votes1 = votes.intValue();
+//		this.rating1 = rating.floatValue();
+//		this.genres2 = genres;
+//		this.name2 = name;
+//		this.year2 = year.intValue();
+//		this.votes2 = votes.intValue();
+//		this.rating2 = rating.floatValue();
+//		this.genres3 = genres;
+//		this.name3 = name;
+//		this.year3 = year.intValue();
+//		this.votes3 = votes.intValue();
+//		this.rating3 = rating.floatValue();
 	}
 
 	/**

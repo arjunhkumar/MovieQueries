@@ -116,7 +116,7 @@ public class UnboxedMovieQueries {
         }
         List<Integer> valList = new ArrayList<>(yearVotesMap.values());
         valList.sort(voteComparator);
-        System.out.println(valList.get(0));
+//        System.out.println(valList.get(0));
         Map.Entry<Integer,Integer> entry = yearVotesMap.entrySet().iterator().next();
         Integer key = entry.getKey();
         finishTime = System.currentTimeMillis();
@@ -149,7 +149,7 @@ public class UnboxedMovieQueries {
         }
         List<Integer> valList = new ArrayList<>(yearCountMap.values());
         valList.sort(countComparator);
-        System.out.println(valList.get(0));
+//        System.out.println(valList.get(0));
         Map.Entry<Integer,Integer> entry = yearCountMap.entrySet().iterator().next();
         Integer key = entry.getKey();
         finishTime = System.currentTimeMillis();

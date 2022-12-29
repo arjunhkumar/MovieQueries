@@ -116,7 +116,7 @@ public class ValueMovieQueries {
         }
         List<Integer> valList = new ArrayList<>(yearVotesMap.values());
         Collections.sort(valList, voteComparator);
-        System.out.println(valList.get(0));
+//        System.out.println(valList.get(0));
         Map.Entry<Integer,Integer> entry = yearVotesMap.entrySet().iterator().next();
         Integer key = entry.getKey();
         finishTime = System.currentTimeMillis();
@@ -130,7 +130,7 @@ public class ValueMovieQueries {
         SortedMap<Integer,Integer> yearCountMap;
         Comparator<Integer> countComparator = new Comparator<Integer>() {
             @Override public int compare(Integer val1, Integer val2) {
-                return (val1 < val2 ? 1 : 0);
+                return (val1 > val2 ? 1 : 0);
             }           
         };
         yearCountMap = new TreeMap<>(countComparator);
@@ -145,7 +145,7 @@ public class ValueMovieQueries {
 				Integer newVal = cont+1;
         		yearCountMap.replace(year,newVal);
         		
-        		System.out.println("Year: "+year+" NewCount: "+yearCountMap.get(year)+" Actual Val:"+newVal);
+//        		System.out.println("Year: "+year+" NewCount: "+yearCountMap.get(year)+" Actual Val:"+newVal);
         	}else {
         		yearCountMap.put(year, 1);
 //        		System.out.println("Year: "+year+" CountVal: "+yearCountMap.get(year)+" Actual Val:1");
@@ -155,7 +155,7 @@ public class ValueMovieQueries {
         List<Integer> valList = new ArrayList<>(yearCountMap.values());
 //        valList.sort(countComparator);
         Collections.sort(valList, countComparator);
-        System.out.println(valList.get(0));
+//        System.out.println(valList.get(0));
         Map.Entry<Integer,Integer> entry = yearCountMap.entrySet().iterator().next();
         Integer key = entry.getKey();
         finishTime = System.currentTimeMillis();

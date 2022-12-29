@@ -17,6 +17,39 @@ public primitive class ValueMovie implements Serializable {
 	private final int votes;
 
 	private final float rating;
+	
+	
+	/** Added to increase instance size*/
+//	private final char[] genres1;
+//
+//	private final char[] name1;
+//
+//	private final int year1;
+//
+//	private final int votes1;
+//
+//	private final float rating1;
+//	
+//	private final char[] genres2;
+//
+//	private final char[] name2;
+//
+//	private final int year2;
+//
+//	private final int votes2;
+//
+//	private final float rating2;
+//	
+//	private final char[] genres3;
+//
+//	private final char[] name3;
+//
+//	private final int year3;
+//
+//	private final int votes3;
+//
+//	private final float rating3;
+
 
     /**
      * Manually modified to confine to JEP spec
@@ -27,6 +60,21 @@ public primitive class ValueMovie implements Serializable {
         this.year = year.intValue();
         this.votes = votes.intValue();
         this.rating = rating.floatValue();
+//        this.genres1 = convertStringToCharArray(genres);
+//        this.name1 = convertStringToCharArray(name);
+//        this.year1 = year.intValue();
+//        this.votes1 = votes.intValue();
+//        this.rating1 = rating.floatValue();
+//        this.genres2 = convertStringToCharArray(genres);
+//        this.name2 = convertStringToCharArray(name);
+//        this.year2 = year.intValue();
+//        this.votes2 = votes.intValue();
+//        this.rating2 = rating.floatValue();
+//        this.genres3 = convertStringToCharArray(genres);
+//        this.name3 = convertStringToCharArray(name);
+//        this.year3 = year.intValue();
+//        this.votes3 = votes.intValue();
+//        this.rating3 = rating.floatValue();
     }
 
 	private static char[] convertStringToCharArray(String stringVal) {
