@@ -1,0 +1,6 @@
+.metadata/
+mvn_project/dataset/
+mvn_project/target/
+mvn_project/.settings/
+*.log
+*.gc.*
